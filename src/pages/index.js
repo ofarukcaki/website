@@ -22,6 +22,9 @@ export default function IndexPage({ data }) {
         </HeroTeaser>
       </Hero>
       <Container forwardedAs="section" pb={5}>
+        <SectionTitle forwardedAs="h2">Social</SectionTitle>
+      </Container>
+      <Container forwardedAs="section" pb={5}>
         <SectionTitle forwardedAs="h2">Blog</SectionTitle>
         <LatestArticles edges={data.allMdx.edges} />
       </Container>

@@ -1,4 +1,4 @@
-const defaultSiteUrl = 'https://gregberge.com'
+const defaultSiteUrl = 'https://ofarukcaki.com'
 
 const {
   NODE_ENV,

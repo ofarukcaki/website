@@ -3,6 +3,8 @@ import styled, { up, css } from '@xstyled/styled-components'
 import { PageContainer, Container } from '../components/Container'
 import dotBg from '../assets/dot-bg.svg'
 import heroBg from '../assets/hero.svg'
+import hideOut from '../assets/hideout.svg'
+import cB from '../assets/circuit-board.svg'
 
 const Dots = styled.div`
   pointer-events: none;
@@ -11,7 +13,7 @@ const Dots = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url(${dotBg});
+  background-image: url(${cB});
   mix-blend-mode: overlay;
   mask-image: linear-gradient(to top, transparent 5%, black 95%),
     linear-gradient(to right, transparent 20%, black 80%);
