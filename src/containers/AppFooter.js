@@ -35,6 +35,11 @@ const SocialLink = styled.a`
   }
 `
 
+const Url = styled.a`
+  color: #a4a4a4;
+  text-decoration: underline;
+`
+
 const currentYear = new Date().getFullYear()
 
 const locales = {
@@ -56,45 +61,62 @@ export function AppFooter() {
   const langKey = useLangKey()
   const t = locales[langKey]
   return (
-    <Container display="flex" alignItems="center" mt={4} pb={4}>
-      <Copyright>Greg Bergé © {currentYear}</Copyright>
-      <Socials>
-        <Location>
-          {({ location }) => (
-            <>
-              {langKey === 'en' && (
-                <SocialLink title="French" as={Link} to={toFrench(location)}>
-                  <Box as="span" fontSize={20} role="img" aria-label="French">
-                    🇫🇷
-                  </Box>
-                </SocialLink>
-              )}
-              {langKey === 'fr' && (
-                <SocialLink title="English" as={Link} to={toEnglish(location)}>
-                  <Box as="span" fontSize={20} role="img" aria-label="Anglais">
-                    🇬🇧
-                  </Box>
-                </SocialLink>
-              )}
-            </>
-          )}
-        </Location>
-        <SocialLink title={t.twitter} href="https://twitter.com/neoziro">
-          <FaTwitter />
-        </SocialLink>
-        <SocialLink title={t.github} href="https://github.com/gregberge">
-          <FaGithub />
-        </SocialLink>
-        <SocialLink
-          title={t.linkedin}
-          href="https://www.linkedin.com/in/gregberge"
-        >
-          <FaLinkedin />
-        </SocialLink>
-        <SocialLink title={t.email} href="mailto:hey@gregberge.com">
-          <FaEnvelope />
-        </SocialLink>
-      </Socials>
-    </Container>
+    <div>
+      <Container display="flex" alignItems="center" mt={4} pb={4}>
+        <Copyright>Ömer Faruk Çakı © {currentYear}</Copyright>
+        <Socials>
+          <Location>
+            {({ location }) => (
+              <>
+                {langKey === 'en' && (
+                  <SocialLink title="French" as={Link} to={toFrench(location)}>
+                    <Box as="span" fontSize={20} role="img" aria-label="French">
+                      🇫🇷
+                    </Box>
+                  </SocialLink>
+                )}
+                {langKey === 'fr' && (
+                  <SocialLink
+                    title="English"
+                    as={Link}
+                    to={toEnglish(location)}
+                  >
+                    <Box
+                      as="span"
+                      fontSize={20}
+                      role="img"
+                      aria-label="Anglais"
+                    >
+                      🇬🇧
+                    </Box>
+                  </SocialLink>
+                )}
+              </>
+            )}
+          </Location>
+          <SocialLink title={t.twitter} href="https://twitter.com/neoziro">
+            <FaTwitter />
+          </SocialLink>
+          <SocialLink title={t.github} href="https://github.com/gregberge">
+            <FaGithub />
+          </SocialLink>
+          <SocialLink
+            title={t.linkedin}
+            href="https://www.linkedin.com/in/gregberge"
+          >
+            <FaLinkedin />
+          </SocialLink>
+          <SocialLink title={t.email} href="mailto:hey@gregberge.com">
+            <FaEnvelope />
+          </SocialLink>
+        </Socials>
+      </Container>
+      <p style={{ textAlign: 'center', opacity: 0.5, fontSize: '13px' }}>
+        This website is a{' '}
+        <Url href="https://github.com/ofarukcaki/website">fork</Url> and
+        originally made by{' '}
+        <Url href="https://github.com/gregberge/gregberge.com">Greg Bergé</Url>{' '}
+      </p>
+    </div>
   )
 }
