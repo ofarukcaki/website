@@ -14,22 +14,16 @@ const locales = {
     blog: 'Blog',
     workshops: 'Workshops',
     projects: 'Projects',
-  },
-  fr: {
-    about: 'A propos',
-    blog: 'Blog',
-    workshops: 'Formations',
-    projects: 'Projets',
-  },
+  }
 }
 
 export function AppNavbar() {
   const langKey = useLangKey()
-  const t = locales[langKey]
+  const t = locales["en"]
   return (
     <Navbar>
       <NavbarBrandLink as={I18nLink} to="/">
-        <NavbarBrand>Greg Bergé</NavbarBrand>
+        <NavbarBrand>O. Faruk Caki</NavbarBrand>
       </NavbarBrandLink>
       <NavbarSecondary>
         <NavbarLink as={I18nLink} to="/about">
@@ -38,9 +32,9 @@ export function AppNavbar() {
         <NavbarLink as={I18nLink} to="/blog">
           {t.blog}
         </NavbarLink>
-        <NavbarLink as={I18nLink} to="/workshops">
+        {/* <NavbarLink as={I18nLink} to="/workshops">
           {t.workshops}
-        </NavbarLink>
+        </NavbarLink> */}
         <NavbarLink as={I18nLink} to="/projects">
           {t.projects}
         </NavbarLink>

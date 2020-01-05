@@ -13,13 +13,12 @@ export default function IndexPage({ data }) {
         <Seo />
         <HeroIntro>Hi, my name is</HeroIntro>
         <HeroTitle>
-          <strong>Greg Bergé.</strong>
-          <br />I help people make the web great.
+          <strong>Ö. Faruk Çakı.</strong>
+          {/* <br />I help people make the web great. */}
         </HeroTitle>
         <HeroTeaser>
-          I am a software engineer based in Paris. I create tools and teach how
-          to build high quality websites and applications using JavaScript and
-          React.
+          I am CSE student at Marmara University(3rd), Istanbul. I love Node.js
+          and my main interest is web applications. I write React.js
         </HeroTeaser>
       </Hero>
       <Container forwardedAs="section" pb={5}>

@@ -39,7 +39,7 @@ export function AppLayout({ children, langKey }) {
           </LayoutHeader>
           <LayoutMain>{children}</LayoutMain>
           <LayoutFooter>
-            <Newsletter />
+            {/* <Newsletter /> */}
             <AppFooter />
           </LayoutFooter>
         </Layout>

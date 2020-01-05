@@ -11,10 +11,6 @@ const locales = {
     description:
       'The personal website of Greg Bergé. Learn and level-up about React & JavaScript.',
   },
-  fr: {
-    description:
-      'Le site personnel de Greg Bergé. Apprenez et devenez meilleur en React et JavaScript.',
-  },
 }
 
 export function Seo({
@@ -37,7 +33,7 @@ export function Seo({
   `)
 
   const langKey = useLangKey()
-  const t = locales[langKey]
+  const t = locales['en']
 
   const title = customTitle || 'Greg Bergé'
   const description = customDescription || t.description

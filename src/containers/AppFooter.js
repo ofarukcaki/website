@@ -40,73 +40,37 @@ const Url = styled.a`
   text-decoration: underline;
 `
 
-const currentYear = new Date().getFullYear()
-
 const locales = {
   en: {
     twitter: 'My Twitter profile',
     github: 'My GitHub profile',
     linkedin: 'My LinkedIn profile',
     email: 'Send me an email',
-  },
-  fr: {
-    twitter: 'Mon profil Twitter',
-    github: 'Mon profil GitHub',
-    linkedin: 'Mon profil LinkedIn',
-    email: 'Écrivez-moi',
-  },
+  }
 }
 
+const currentYear = new Date().getFullYear()
+
 export function AppFooter() {
-  const langKey = useLangKey()
-  const t = locales[langKey]
+  const t = locales["en"]
   return (
     <div>
-      <Container display="flex" alignItems="center" mt={4} pb={4}>
+      <Container display="flex" alignItems="center" mt={4} pb={0}>
         <Copyright>Ömer Faruk Çakı © {currentYear}</Copyright>
         <Socials>
-          <Location>
-            {({ location }) => (
-              <>
-                {langKey === 'en' && (
-                  <SocialLink title="French" as={Link} to={toFrench(location)}>
-                    <Box as="span" fontSize={20} role="img" aria-label="French">
-                      🇫🇷
-                    </Box>
-                  </SocialLink>
-                )}
-                {langKey === 'fr' && (
-                  <SocialLink
-                    title="English"
-                    as={Link}
-                    to={toEnglish(location)}
-                  >
-                    <Box
-                      as="span"
-                      fontSize={20}
-                      role="img"
-                      aria-label="Anglais"
-                    >
-                      🇬🇧
-                    </Box>
-                  </SocialLink>
-                )}
-              </>
-            )}
-          </Location>
-          <SocialLink title={t.twitter} href="https://twitter.com/neoziro">
+          <SocialLink title={t.twitter} href="https://twitter.com/ofarukcaki">
             <FaTwitter />
           </SocialLink>
-          <SocialLink title={t.github} href="https://github.com/gregberge">
+          <SocialLink title={t.github} href="https://github.com/ofarukcaki">
             <FaGithub />
           </SocialLink>
           <SocialLink
             title={t.linkedin}
-            href="https://www.linkedin.com/in/gregberge"
+            href="https://www.linkedin.com/in/ofarukcaki"
           >
             <FaLinkedin />
           </SocialLink>
-          <SocialLink title={t.email} href="mailto:hey@gregberge.com">
+          <SocialLink title={t.email} href="mailto:contact@ofarukcaki.com">
             <FaEnvelope />
           </SocialLink>
         </Socials>
