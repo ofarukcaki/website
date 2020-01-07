@@ -26,6 +26,9 @@ export function AppNavbar() {
         <NavbarBrand>O. Faruk Caki</NavbarBrand>
       </NavbarBrandLink>
       <NavbarSecondary>
+        <NavbarLink as={I18nLink} to="/">
+          Home
+        </NavbarLink>
         <NavbarLink as={I18nLink} to="/about">
           {t.about}
         </NavbarLink>

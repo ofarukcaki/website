@@ -5,6 +5,7 @@ import { Container } from '../components/Container'
 import { Hero, HeroIntro, HeroTitle, HeroTeaser } from '../containers/Hero'
 import { LatestArticles } from '../containers/LatestArticles'
 import { Seo } from '../containers/Seo'
+import Socials from '../components/Socials'
 
 export default function IndexPage({ data }) {
   return (
@@ -23,6 +24,7 @@ export default function IndexPage({ data }) {
       </Hero>
       <Container forwardedAs="section" pb={5}>
         <SectionTitle forwardedAs="h2">Social</SectionTitle>
+        <Socials />
       </Container>
       <Container forwardedAs="section" pb={5}>
         <SectionTitle forwardedAs="h2">Blog</SectionTitle>

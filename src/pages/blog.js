@@ -12,7 +12,7 @@ export default function Blog({ data }) {
       <PageContainer>
         <SectionTitle>Blog</SectionTitle>
         <SectionDescription>
-          I write about React, JavaScript and how to solve problems. Enjoy your
+          I write about Bitcoin-in Turkish-, React and JS. Enjoy your
           read!
         </SectionDescription>
         <LatestArticles edges={data.allMdx.edges} />
