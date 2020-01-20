@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from '@xstyled/styled-components'
-import { graphql } from 'gatsby'
+import { Link } from 'gatsby'
 import { SectionTitle } from '../components/Section'
 import { Container } from '../components/Container'
 import { Hero, HeroIntro, HeroTitle, HeroTeaser } from '../containers/Hero'
@@ -24,7 +24,7 @@ export default function IndexPage({ data }) {
         </HeroTitle>
         <HeroTeaser>
           I am a CSE student at Marmara University, Istanbul. I love Node.js and
-          my main interest is web applications. <Small>read more</Small>
+          my main area of interest is web applications. <Small><Link to="/about">read more</Link></Small>
         </HeroTeaser>
       </Hero>
       <Container forwardedAs="section" pb={5}>

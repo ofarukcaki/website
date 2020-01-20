@@ -439,11 +439,12 @@ export function ProjectsPageTemplate({ title, intro, projects }) {
   `)
   return (
     <>
-      <Seo title={`Greg Bergé — ${title}`} />
+      <Seo title={`Ö. Faruk Çakı — ${title}`} />
       <PageContainer>
         <SectionTitle>{title}</SectionTitle>
         <SectionDescription>{intro}</SectionDescription>
-        <Projects data={data} projects={projects} />
+        {/* <Projects data={data} projects={projects} /> */}
+        <p>Page under construction...</p>
       </PageContainer>
     </>
   )

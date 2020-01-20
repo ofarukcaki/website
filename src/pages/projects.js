@@ -5,13 +5,7 @@ export default function ProjectsPage() {
   return (
     <ProjectsPageTemplate
       title="Projects"
-      intro={
-        <>
-          Open source is a real passion and a way of thinking. My tools are used
-          and trusted by <strong>thousands of developers</strong> all over the
-          world.
-        </>
-      }
+      intro={<>Here I collected some of my personal projects.</>}
       projects={{
         svgr: {
           label: 'Integrated in create-react-app',
