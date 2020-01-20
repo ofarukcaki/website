@@ -85,23 +85,15 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         start_url: `/`,
-        name: `Greg Bergé`,
-        short_name: `gregberge`,
+        name: `Ömer Faruk Çakı`,
+        short_name: `ofarukcak'i`,
         description:
-          'The personal website of Greg Bergé. Learn and level-up about React & JavaScript.',
+          'The personal website of Ömer Faruk Çakı',
         background_color: `#1f2347`,
         theme_color: `#FFCC68`,
         display: `standalone`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
-        localize: [
-          {
-            start_url: `/fr/`,
-            lang: `fr`,
-            name: `Greg Bergé`,
-            short_name: `gregberge`,
-            description: `Le site personnel de Greg Bergé. Apprenez et devenez meilleur en React et JavaScript.`,
-          },
-        ],
+        localize: [],
       },
     },
     {

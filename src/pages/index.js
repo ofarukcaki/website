@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from '@xstyled/styled-components'
 import { graphql } from 'gatsby'
 import { SectionTitle } from '../components/Section'
 import { Container } from '../components/Container'
@@ -6,6 +7,10 @@ import { Hero, HeroIntro, HeroTitle, HeroTeaser } from '../containers/Hero'
 import { LatestArticles } from '../containers/LatestArticles'
 import { Seo } from '../containers/Seo'
 import Socials from '../components/Socials'
+
+const Small = styled.small`
+  color: accent;
+`
 
 export default function IndexPage({ data }) {
   return (
@@ -18,8 +23,8 @@ export default function IndexPage({ data }) {
           {/* <br />I help people make the web great. */}
         </HeroTitle>
         <HeroTeaser>
-          I am CSE student at Marmara University(3rd), Istanbul. I love Node.js
-          and my main interest is web applications. I write React.js
+          I am a CSE student at Marmara University, Istanbul. I love Node.js and
+          my main interest is web applications. <Small>read more</Small>
         </HeroTeaser>
       </Hero>
       <Container forwardedAs="section" pb={5}>
@@ -28,12 +33,13 @@ export default function IndexPage({ data }) {
       </Container>
       <Container forwardedAs="section" pb={5}>
         <SectionTitle forwardedAs="h2">Blog</SectionTitle>
-        <LatestArticles edges={data.allMdx.edges} />
+        {/* <LatestArticles edges={data.allMdx.edges} /> */}
+        <LatestArticles />
       </Container>
     </>
   )
 }
-
+/*
 export const pageQuery = graphql`
   query($langKey: String!) {
     allMdx(
@@ -61,3 +67,4 @@ export const pageQuery = graphql`
     }
   }
 `
+*/

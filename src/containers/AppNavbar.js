@@ -23,7 +23,7 @@ export function AppNavbar() {
   return (
     <Navbar>
       <NavbarBrandLink as={I18nLink} to="/">
-        <NavbarBrand>O. Faruk Caki</NavbarBrand>
+        <NavbarBrand>Ö. Faruk Çakı</NavbarBrand>
       </NavbarBrandLink>
       <NavbarSecondary>
         <NavbarLink as={I18nLink} to="/">

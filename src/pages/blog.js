@@ -12,8 +12,15 @@ export default function Blog({ data }) {
       <PageContainer>
         <SectionTitle>Blog</SectionTitle>
         <SectionDescription>
-          I write about Bitcoin-in Turkish-, React and JS. Enjoy your
-          read!
+          I write about Bitcoin <small>(in Turkish)</small>, React and Node.js
+          on my{' '}
+          <a
+            style={{ textDecoration: 'underline' }}
+            target="_blank"
+            href="https://medium.com/@ofarukcaki"
+          >
+            Medium
+          </a>
         </SectionDescription>
         <LatestArticles edges={data.allMdx.edges} />
       </PageContainer>

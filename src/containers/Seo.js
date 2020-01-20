@@ -9,7 +9,7 @@ import { SchemaOrg } from './SchemaOrg'
 const locales = {
   en: {
     description:
-      'The personal website of Greg Bergé. Learn and level-up about React & JavaScript.',
+      'The personal website of Ömer Faruk Çakı',
   },
 }
 
@@ -35,7 +35,7 @@ export function Seo({
   const langKey = useLangKey()
   const t = locales['en']
 
-  const title = customTitle || 'Greg Bergé'
+  const title = customTitle || 'Ömer Faruk Çakı'
   const description = customDescription || t.description
   const image = customImage || defaultImage
 

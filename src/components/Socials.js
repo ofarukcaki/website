@@ -18,11 +18,19 @@ const List = styled.ul`
   justify-content: space-around;
 `
 
+const ListElement = styled.li`
+  transition: all .1s ease-in-out;
+
+  &:hover{
+    transform: scale(1.15);
+  }
+`
+
 const Socials = () => {
   return (
     <div>
       <List>
-        <li>
+        <ListElement>
           <a
             href="https://github.com/ofarukcaki/"
             target="_blank"
@@ -31,8 +39,8 @@ const Socials = () => {
             {/* <span class="label">Github</span> */}
             <Github h={32} />
           </a>
-        </li>
-        <li>
+        </ListElement>
+        <ListElement>
           <a
             href="https://www.linkedin.com/in/ofarukcaki/"
             target="_blank"
@@ -43,8 +51,8 @@ const Socials = () => {
             </span> */}
             <Linkedin2 h={32} w={32} />
           </a>
-        </li>
-        <li>
+        </ListElement>
+        <ListElement>
           <a
             href="https://medium.com/@ofarukcaki"
             target="_blank"
@@ -53,8 +61,8 @@ const Socials = () => {
             {/* <span class="label">Medium</span> */}
             <Medium h={32} w={32} />
           </a>
-        </li>
-        <li>
+        </ListElement>
+        <ListElement>
           <a
             href="https://unsplash.com/@ofarukcaki"
             target="_blank"
@@ -63,8 +71,8 @@ const Socials = () => {
             {/* <span class="label">Unsplash</span> */}
             <Unsplash h={32} w={32} />
           </a>
-        </li>
-        <li>
+        </ListElement>
+        <ListElement>
           <a
             href="https://twitter.com/ofarukcaki"
             target="_blank"
@@ -74,7 +82,7 @@ const Socials = () => {
             {/* <span class="label">Twitter</span> */}
             <Twitter h={32} w={32} />
           </a>
-        </li>
+        </ListElement>
         {/* <li>
           <a
             href="mailto:contact@ofarukcaki.com"

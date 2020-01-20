@@ -48,16 +48,16 @@ const theme = {
     light100: '#DCDFF7',
     light300: '#ADB2DC',
     light400: '#6870AF',
-    light500: '#343C7A',
-    light700: '#2e3360',
-    light800: '#282E5E',
-    light900: '#22264A',
-    light950: '#1f2347',
+    light500: '#43576f',
+    light700: '#303e4f',
+    light800: '#1d2530',
+    light900: '#1f2833',
+    light950: '#222831',
     'navbar-bg': p => transparentize(0.1, th.color('light900')(p)),
     shadow: p => transparentize(0.75, th.color('accent')(p)),
     'shadow-dark': p => transparentize(0.75, th.color('darker')(p)),
     darker: th.color('black'),
-    accent: '#FFCC68',
+    accent: '#00adb5',
 
     modes: {
       light: {

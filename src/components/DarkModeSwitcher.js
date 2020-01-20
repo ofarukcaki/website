@@ -88,7 +88,7 @@ const Switcher = styled.button`
       width: 18;
       height: 18;
       border-radius: 50%;
-      background: #00134c;
+      background: #13171d;
       position: absolute;
       left: -4;
       top: 0;
@@ -97,7 +97,7 @@ const Switcher = styled.button`
   }
 
   &.dark {
-    background: #00134c;
+    background: #13171d;
   }
 
   &.dark .star {
@@ -132,7 +132,7 @@ const Switcher = styled.button`
 
   &.dark .round-btn {
     transform: translateX(30px) rotate(20deg);
-    border-color: #00134c;
+    border-color: #13171d;
   }
 
   &.dark .round-btn .moon-mode {
