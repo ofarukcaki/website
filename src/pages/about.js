@@ -1,22 +1,17 @@
 import React from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
 import { SectionTitle, SectionDescription } from '../components/Section'
 import { Container } from '../components/Container'
 import { Seo } from '../containers/Seo'
 import { AboutContainer, AboutText, AboutImage } from '../containers/About'
+import styled from '@xstyled/styled-components'
+
+const Link = styled.a`
+  // text-decoration: underline;
+  // box-shadow: inset 0 0px 0 #eeeeee82, inset 0 -1px 0 #eeeeee82
+  color: lighter;
+`
 
 export default function AboutPage() {
-  const data = useStaticQuery(graphql`
-    query {
-      photo: file(relativePath: { eq: "react-europe.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `)
   return (
     <>
       <Seo title="About Ömer Faruk Çakı" />
@@ -33,6 +28,27 @@ export default function AboutPage() {
               )
             </small>{' '}
             at Marmara University.
+          </SectionDescription>
+          <SectionDescription>
+            <p>
+              Even I have sufficient knowledge in various programming languages;
+              my favorite one is Node.js. I can call myself as a Web Developer but
+              I'm not only limited with web, I also enjoy coding C++.
+            </p>
+            <p>
+              My open-source project can be found on my{' '}
+              <Link href="https://github.com/ofarukcaki">Github</Link>, I also
+              publish Node.js packages on{' '}
+              <Link href="https://www.npmjs.com/~ofarukcaki">NPM</Link>.
+            </p>
+            <p>
+              Besides these, I have a special interest in Bitcoin and a little bit
+              for the blockchain. I try to write about bitcoin
+              <small>(usually technical stuff)</small> on my{' '}
+              <Link href="https://medium.com/@ofarukcaki">blog</Link>, in
+              Turkish.
+            </p>
+            <p>I'm using <Link href="https://www.hackerrank.com/ofarukcaki">Hackerrank</Link> as well.</p>
           </SectionDescription>
         </Container>
         {/* <AboutImage img={data.photo.childImageSharp} /> */}
