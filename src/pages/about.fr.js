@@ -7,17 +7,7 @@ import { Seo } from '../containers/Seo'
 import { AboutContainer, AboutText, AboutImage } from '../containers/About'
 
 export default function AboutPage() {
-  const data = useStaticQuery(graphql`
-    query {
-      photo: file(relativePath: { eq: "react-europe.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `)
+
   return (
     <>
       <Seo title="A propos de Greg Bergé" />
@@ -29,7 +19,7 @@ export default function AboutPage() {
             outils pour être plus efficace.
           </SectionDescription>
         </Container>
-        <AboutImage img={data.photo.childImageSharp} />
+        {/* <AboutImage img={data.photo.childImageSharp} /> */}
         <AboutText>
           <p>
             A 12 ans, je crée mon premier site de jeux, quelques mois plus tard

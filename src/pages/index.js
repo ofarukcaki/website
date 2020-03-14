@@ -12,6 +12,12 @@ const Small = styled.small`
   color: accent;
 `
 
+const ResumeLink = styled.a`
+  color: lighter;
+`
+const P = styled.p`
+  font-size: 1.15rem;
+`
 export default function IndexPage({ data }) {
   return (
     <>
@@ -24,8 +30,14 @@ export default function IndexPage({ data }) {
         </HeroTitle>
         <HeroTeaser>
           I am a CSE student at Marmara University, Istanbul. I love Node.js and
-          my main area of interest is web applications. <Small><Link to="/about">read more</Link></Small>
+          my main area of interest is web applications.{' '}
+          <Small>
+            <Link to="/about">read more</Link>
+          </Small>
         </HeroTeaser>
+        <P>
+          Check out my <ResumeLink href="/resume.pdf">Resume</ResumeLink>{' '}
+        </P>
       </Hero>
       <Container forwardedAs="section" pb={5}>
         <SectionTitle forwardedAs="h2">Social</SectionTitle>
@@ -39,32 +51,3 @@ export default function IndexPage({ data }) {
     </>
   )
 }
-/*
-export const pageQuery = graphql`
-  query($langKey: String!) {
-    allMdx(
-      limit: 5
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: {
-        frontmatter: { published: { ne: false } }
-        fields: { langKey: { eq: $langKey } }
-      }
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 190)
-          id
-          fields {
-            link
-          }
-          frontmatter {
-            title
-            slug
-            date(formatString: "MMMM DD, YYYY")
-          }
-        }
-      }
-    }
-  }
-`
-*/

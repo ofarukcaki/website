@@ -32,8 +32,13 @@ export default function AboutPage() {
           <SectionDescription>
             <p>
               Even I have sufficient knowledge in various programming languages;
-              my favorite one is Node.js. I can call myself as a Web Developer but
-              I'm not only limited with web, I also enjoy coding C++.
+              my favorite one is Node.js. I can call myself as a Web Developer
+              but I'm not only limited with web, I also enjoy coding C++. {'  '}
+              Here is my{' '}
+              <Link href="https://www.hackerrank.com/ofarukcaki">
+                Hackerrank
+              </Link>{' '}
+              profile.
             </p>
             <p>
               My open-source project can be found on my{' '}
@@ -42,13 +47,12 @@ export default function AboutPage() {
               <Link href="https://www.npmjs.com/~ofarukcaki">NPM</Link>.
             </p>
             <p>
-              Besides these, I have a special interest in Bitcoin and a little bit
-              for the blockchain. I try to write about bitcoin
+              Besides these, I have a special interest in Bitcoin and a little
+              bit for the blockchain. I try to write about bitcoin
               <small>(usually technical stuff)</small> on my{' '}
               <Link href="https://medium.com/@ofarukcaki">blog</Link>, in
               Turkish.
             </p>
-            <p>I'm using <Link href="https://www.hackerrank.com/ofarukcaki">Hackerrank</Link> as well.</p>
           </SectionDescription>
         </Container>
         {/* <AboutImage img={data.photo.childImageSharp} /> */}
