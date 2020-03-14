@@ -60,7 +60,7 @@ export default function AboutPage() {
           <p>
             Don&apos;t hesitate to reach out on{' '}
             <a href="https://twitter.com/ofarukcaki">Twitter</a> or by{' '}
-            <a href="mailto:contact@gofarukcaki.com">email</a>.
+            <a href="mailto:contact@ofarukcaki.com">email</a>.
           </p>
         </AboutText>
       </AboutContainer>
